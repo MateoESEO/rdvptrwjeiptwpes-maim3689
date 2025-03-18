@@ -22,6 +22,18 @@
       <h1>Le Mystère de rdvptrwjeiptwpes</h1>
     </header>
     <main>
+      <p id="horloge"></p>
+      <p
+        id="mystery-text"
+        style="
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.2rem;
+          color: #007bff;
+        "
+      >
+        Un mystère à découvrir...
+      </p>
       <p>
         Bienvenue sur le site officiel du rdvptrwjeiptwpes, le mot le plus
         mystérieux de tous les temps ! Découvrez son origine, son utilisation et
@@ -209,6 +221,13 @@
           <li>
             [18/03/2025] Ajout d'un script pour afficher une alerte secrète.
           </li>
+          <li>
+            [18/03/2025] Ajout d'un script pour afficher l'heure en temps réel.
+          </li>
+          <li>
+            [18/03/2025] Ajout d'un script pour afficher des phrases
+            mystérieuses.
+          </li>
         </ul>
       </div>
       <div class="theme-switch">
@@ -256,6 +275,36 @@
           );
         }
       });
+    </script>
+    <script>
+      function updateClock() {
+        const now = new Date();
+        document.getElementById("horloge").textContent =
+          "🕒 Heure actuelle : " + now.toLocaleTimeString("fr-FR");
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+    </script>
+    <script>
+      const phrases = [
+        "Le mystère s'épaissit...",
+        "Un secret bien gardé...",
+        "Et si tout cela était un code caché ?",
+        "Les anciens le savaient...",
+        "Un message pour les initiés...",
+        "rdvptrwjeiptwpes est la clé...",
+      ];
+
+      function changeMysteryText() {
+        const mysteryText = document.getElementById("mystery-text");
+        if (mysteryText) {
+          const randomPhrase =
+            phrases[Math.floor(Math.random() * phrases.length)];
+          mysteryText.textContent = randomPhrase;
+        }
+      }
+
+      setInterval(changeMysteryText, 3000);
     </script>
   </body>
 </html>
