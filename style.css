@@ -69,20 +69,27 @@ a:hover {
 .nav-links ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Ajoute un espacement entre les boutons */
+    flex-wrap: wrap; /* Permet aux boutons de passer à la ligne si nécessaire */
 }
 
 .nav-links li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block;
 }
+
 
 .nav-links a {
     font-size: 1.2rem;
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 12px 20px;
+    border-radius: 8px;
     background: #007bff;
     color: white;
     transition: background 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap; /* Évite que le texte se coupe */
 }
 
 .nav-links a:hover {
@@ -131,4 +138,123 @@ a:hover {
 
 .btn-twitter:hover {
     background: #0d81d9;
+}
+
+
+/* Appliquer un dégradé au header */
+header {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Meilleure présentation des titres */
+h2, h3 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Amélioration de l'affichage des images */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Meilleur espacement et style des sections */
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Style des liens avec animation */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+/* Amélioration des boutons de partage */
+.social-share {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.social-share a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    width: 280px;
+    margin: 10px auto;
+}
+
+.social-share a img {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-facebook {
+    background: #1877F2;
+}
+
+.btn-facebook:hover {
+    background: #145db2;
+    transform: scale(1.05);
+}
+
+.btn-twitter {
+    background: #1DA1F2;
+}
+
+.btn-twitter:hover {
+    background: #0d81d9;
+    transform: scale(1.05);
+}
+
+/* Style pour la FAQ */
+.faq-section {
+    margin: 40px 0;
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.faq-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.faq-section p {
+    text-align: justify;
 }
