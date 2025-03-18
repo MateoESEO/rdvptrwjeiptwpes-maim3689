@@ -292,3 +292,110 @@ a:hover {
 .dark-mode .changelog, .dark-mode .faq-section {
     background: #333;
 }
+
+#matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: black;
+    filter: blur(1px) opacity(0.9); /* Floute légèrement et réduit l'intensité */
+
+}
+
+
+/* Ajoute un fond semi-transparent au contenu */
+.content-wrapper {
+    background: rgba(0, 0, 0, 0.6); /* Fond noir semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    color: white; /* Rend le texte blanc */
+}
+/* Changer la couleur du texte pour un effet Matrix */
+body {
+    color: #00FF00;
+}
+
+/* Rendre les titres plus lumineux */
+h1, h2, h3 {
+    color: #33FF33;
+}
+
+/* Corriger la FAQ et le Changelog pour qu'ils restent visibles */
+.faq-section, .changelog {
+    background: rgba(0, 0, 0, 0.8); /* Fond noir semi-transparent */
+    color: #00FF00; /* Texte vert */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Accentuer la lisibilité des questions */
+.faq-section h3, .changelog h3 {
+    color: #33FF33;
+    font-weight: bold;
+}
+
+/* Assurer la visibilité des paragraphes */
+.faq-section p, .changelog p {
+    color: #00FF00;
+}
+
+/* Appliquer un effet neon sur les liens */
+a {
+    color: #33FF33;
+    text-shadow: 0 0 5px #33FF33;
+}
+
+a:hover {
+    color: #00FF99;
+    text-shadow: 0 0 10px #00FF99;
+}
+
+/* Amélioration de la lisibilité des textes */
+body {
+    color: #00FF00;
+    font-family: 'Courier New', monospace; /* Police type hacking */
+}
+
+/* Rendre les titres plus visibles et immersifs */
+h1, h2, h3 {
+    color: #33FF33;
+    text-shadow: 0 0 10px #33FF33, 0 0 20px #00FF00; /* Effet néon */
+}
+
+/* Correction des boîtes de texte (FAQ, Changelog) pour meilleure lisibilité */
+.faq-section, .changelog, .content-wrapper {
+    background: rgba(0, 0, 0, 0.9); /* Fond noir semi-transparent plus foncé */
+    color: #00FF00; /* Texte bien visible */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Effet lumineux */
+}
+
+/* Style des boutons pour matcher avec le thème Matrix */
+.nav-links a, .social-share a, #toggle-theme {
+    background: linear-gradient(45deg, #008000, #00ff00);
+    border: 2px solid #00ff00;
+    color: black;
+    text-shadow: 0 0 10px #00FF00;
+    font-weight: bold;
+}
+
+.nav-links a:hover, .social-share a:hover, #toggle-theme:hover {
+    background: linear-gradient(45deg, #00ff00, #008000);
+    box-shadow: 0 0 20px #00FF00;
+}
+
+/* Correction des liens pour les rendre plus lisibles */
+a {
+    color: #33FF33;
+    text-shadow: 0 0 10px #33FF33;
+}
+
+a:hover {
+    color: #00FF99;
+    text-shadow: 0 0 15px #00FF99;
+}
