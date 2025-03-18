@@ -39,3 +39,10 @@ main h2 {
     color: #4db8ff;
     text-decoration: none;
 }
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Ajoute des bords arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre */
+}
