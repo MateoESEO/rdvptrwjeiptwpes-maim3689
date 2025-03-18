@@ -46,3 +46,46 @@ main h2 {
     border-radius: 10px; /* Ajoute des bords arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre */
 }
+
+/* Liens internes et externes */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0056b3; /* Assombrit le lien au survol */
+    text-decoration: underline;
+}
+
+/* Menu de navigation (liens internes) */
+.nav-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background: #0056b3;
+    text-decoration: none;
+}
