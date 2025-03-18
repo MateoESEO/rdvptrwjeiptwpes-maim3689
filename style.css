@@ -258,3 +258,37 @@ a:hover {
 .faq-section p {
     text-align: justify;
 }
+
+.theme-switch {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#toggle-theme {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#toggle-theme:hover {
+    background: #555;
+}
+
+/* Mode sombre */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode header {
+    background: linear-gradient(135deg, #222, #444);
+}
+
+.dark-mode .changelog, .dark-mode .faq-section {
+    background: #333;
+}

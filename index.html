@@ -198,13 +198,52 @@
           <li>
             [18/03/2025] Ajout de boutons de partage sur Facebook et Twitter.
           </li>
-          <li>[18/03/2025] Amélioration du design général avec animations et styles modernisés.</li>
+          <li>
+            [18/03/2025] Amélioration du design général avec animations et
+            styles modernisés.
+          </li>
+          <li>
+            [18/03/2025] Ajout d'un script pour animer le titre de la page.
+          </li>
+          <li>[18/03/2025] Ajout d'un script pour activer le mode sombre.</li>
         </ul>
+      </div>
+      <div class="theme-switch">
+        <button id="toggle-theme">🌙 Mode Sombre</button>
       </div>
     </main>
     <footer class="footer">
       <p>Créé par Matéo Maille - CIP : <em>maim3689</em></p>
       <p><a href="#">Retour en haut</a></p>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const title = document.querySelector("header h1");
+        const text = "Le Mystère de rdvptrwjeiptwpes";
+        let i = 0;
+
+        function animateTitle() {
+          title.innerHTML = text.substring(0, i) + "_";
+          if (i < text.length) {
+            i++;
+            setTimeout(animateTitle, 100);
+          } else {
+            title.innerHTML = text; // Remet le titre normal à la fin
+          }
+        }
+
+        animateTitle();
+      });
+    </script>
+    <script>
+      document
+        .getElementById("toggle-theme")
+        .addEventListener("click", function () {
+          document.body.classList.toggle("dark-mode");
+          this.textContent = document.body.classList.contains("dark-mode")
+            ? "☀ Mode Clair"
+            : "🌙 Mode Sombre";
+        });
+    </script>
   </body>
 </html>
