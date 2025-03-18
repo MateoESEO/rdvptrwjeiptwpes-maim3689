@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+main {
+    padding: 2rem;
+}
+main h2 {
+    color: #007bff;
+}
+.changelog {
+    margin-top: 2rem;
+    background: #f1f1f1;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
+.footer a {
+    color: #4db8ff;
+    text-decoration: none;
+}
