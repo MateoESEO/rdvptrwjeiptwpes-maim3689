@@ -206,6 +206,9 @@
             [18/03/2025] Ajout d'un script pour animer le titre de la page.
           </li>
           <li>[18/03/2025] Ajout d'un script pour activer le mode sombre.</li>
+          <li>
+            [18/03/2025] Ajout d'un script pour afficher une alerte secrète.
+          </li>
         </ul>
       </div>
       <div class="theme-switch">
@@ -244,6 +247,15 @@
             ? "☀ Mode Clair"
             : "🌙 Mode Sombre";
         });
+    </script>
+    <script>
+      document.addEventListener("keydown", function (event) {
+        if (event.key.toLowerCase() === "r") {
+          alert(
+            "🔥 Félicitations, tu as découvert un secret ! Rdvptrwjeiptwpes est peut-être la clé de l'univers..."
+          );
+        }
+      });
     </script>
   </body>
 </html>
